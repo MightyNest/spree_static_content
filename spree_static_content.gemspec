@@ -22,7 +22,8 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.1.0.beta'
+  spree_version = '>= 3.1.0', '< 4.0'
+  s.add_dependency 'spree_core', spree_version
 
   s.add_development_dependency 'capybara', '~> 2.5'
   s.add_development_dependency 'factory_girl', '~> 4.4'
